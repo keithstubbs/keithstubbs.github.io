@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(https://images.unsplash.com/photo-1504283165217-3679a64511fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) no-repeat center center fixed lightblue;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #3b138b;
+  background-color: #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+#main {
+  height: auto;
+}
+
+.main-wrapper {
+  width: 80%;
+  display: inline-block;
+}
+
+.logo {
+  padding: 1em;
+  width: 18em;
+  display: block;
+  float: left;
+}
+
+.title-float {
+  display: block;
+  float: right;
+  color: white;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+#title {
+  font-weight: 900;
+  font-size: 3em;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#description {
+  font-weight: 200;
+  padding-top: 0;
+  padding: 0 0 .5em 0;
+  margin-top: 0;
+}
+
+.form-wrapper {
+  display: inline-block;
+  width: 100%;
+  background-color: #444;
+  border: 3px dashed black;
+  color: orange;
+  opacity: 0.8;
+}
+
+#survey-form {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  padding: 3px;
+  font-size: 15px;
+}
+
+#name, #email {
+  display: block;
+  max-width: 400px;
+}
+
+.contact input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contact {
+  padding: 5px 5px 0px 10px;
+  margin: 10px;
+}
+
+.row {
+  margin-top: 6px;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col1 {
+  display: block;
+  float: left;
+  margin-bottom: 0;
+  width: 50%;
+  padding-right: 5px;
+}
+
+.col2 {
+  display: block;
+  float: left;
+  margin-bottom: 0;
+  width: 50%;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .col1, .col2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
+
+.order-type {
+  width: 100%;
+  text-align: left;
+  margin-top: 0;
+}
+
+.fieldset {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid orange;
+  border-radius: .5em;
+  min-height: 5em;
+}
+
+.fieldset-order input {
+  margin: 0 0 20px;
+  max-width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  resize: vertical;
+}
+
+#number {
+  min-width: 150px;
+}
+
+.fieldset-order select {
+  padding: 10px;
+  margin: 0 0 20px;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: .5em;
+}
+
+.fieldset2 {
+  padding: 20px 20px 0px 20px;
+  margin: 20px 20px 0px 20px;
+  border: 1px solid orange;
+  border-radius: .5em;
+  min-height: 16em;
+}
+
+.checkbox {
+  text-align: left;
+  padding: .5em;
+  resize: vertical;
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  border: 1px solid orange;
+  font-size: 90%;
+  text-align: left;
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+footer p {
+  color: white;
+  font-weight: 200;
+}

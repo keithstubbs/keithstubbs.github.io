@@ -1,7 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Order Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div id="main" class="main-wrapper">
+
+  <div>
+    <img src="images/logo.svg" class="logo"/>
+    <div class="title-float">
+      <h1 id="title">Online Ordering</h1>
+      <p id="description">For dining in or take out</p>
+    </div>
+  </div>
+
+  <div class="form-wrapper">
+
+    <form id="survey-form">
+
+      <div class="contact">
+        <div class="row">
+          <div class="col1">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="col2">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-type">
+        <div class="row">
+            <fieldset class="fieldset">
+              <legend>Order Type</legend>
+              <label><input type="radio" name="radiogroup" value="radio1" checked> Dine In</label>
+              <label><input type="radio" name="radiogroup" value="radio2"> Take Out</label>
+            </fieldset>
+        </div>
+      </div>
+
+      <div class="fieldset-order">
+        <div class="row">
+          <div class="col1">
+            <fieldset class="fieldset2">
+              <legend>Eggs</legend>
+              <label for="number" id="number-label">Number of eggs (6 maximum):</label>
+              <input type="number" name="numberinput" min="1" max="6" id="number" placeholder="How many eggs?" required>
+              <label for="dropdown" class="label">Preparation style:</label>
+              <select id="dropdown">
+                <option value="1">Hard Boiled</option>
+                <option value="2">Soft Boiled</option>
+                <option value="3">Over Boiled</option>
+                <option value="4">Over Easy</option>
+                <option value="5">Sunny Side Up</option>
+                <option value="5">Over Hard</option>
+                <option value="5">Poached</option>
+                <option value="5">Scrambled</option>
+              </select>
+
+            </fieldset>
+          </div>
+
+          <div class="col2">
+            <fieldset class="fieldset2">
+              <legend>Toppings</legend>
+              <label for="toppings">Select any of the following toppings ($1 extra):</label>
+              <div class="checkbox">
+                <label><input type="checkbox" name="checkbox1" value="Avocado"> Avocado</label>
+                <label><input type="checkbox" name="checkbox2" value="Smoked Salmon"> Smoked Salmon</label>
+                <label><input type="checkbox" name="checkbox3" value="Pulled Pork"> Pulled Pork</label>
+                <label><input type="checkbox" name="checkbox3" value="Cream Cheese"> Cream Cheese</label>
+              </div>
+          </div>
+        </div>
+
+      <fieldset class="fieldset">
+        <legend>Special Instructions</legend>
+        <div class="textarea">
+        <textarea name="comments" rows="10" cols="100"></textarea>
+        </div>
+      </fieldset>
+
+      <div>
+        <input type="submit" value="Submit" id="submit">
+      </div>
+
+    </div>
+
+    </form>
+  </div>
+</div>
+
+  <footer id="footer">
+    <p>Copyright 2019 by Keith Stubbs</p>
+  </footer>
+
+</div>
+
 </body>
-</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
